@@ -66,3 +66,50 @@ for (int position = 0; position < lenght; position++)
 {
     Console.Write(arrey[position] + ",");
 } */
+
+// 3 Вариант, когда размер массива равен 8. И пользователь сам вводит значение каждого элемента массива
+
+/* int[] arrey = new int[8];
+int lenght = arrey.Length;
+
+for (int index = 0; index < lenght; index++)
+{
+    Console.Write("Введите значение элемента массива под index " + index + " = ");
+    arrey[index] = int.Parse(Console.ReadLine());
+}
+Console.Write("Массив из заданных элементов -> ");
+for (int position = 0; position < lenght; position++)
+{
+    Console.Write(arrey[position] + ",");
+} */
+
+// 4 Вариант, когда пользователь сам сам определяем размер массива, но максимальное количество элементов массива не будет превышать 8. А затем вводит значение каждого элемента массива
+
+/* Console.Write("Введите количество элементов массива от 1 до 8: ");
+int number1 = int.Parse(Console.ReadLine());
+while (number1 > 8 || number1 < 1)
+{
+    if (number1 > 8)
+    {
+        Console.Write("Вы ввели количество элементов массива превышающее значение 8. Введите количество элементов массива от 1 до 8: ");
+        number1 = int.Parse(Console.ReadLine());
+    }
+    else
+    {
+        Console.Write("Вы ввели количество элементов массива, превышающее значение 8. Введите количество элементов массива от 1 до 8: ");
+        number1 = int.Parse(Console.ReadLine());
+    }
+}
+int[] arrey = new int[number1];
+int lenght = arrey.Length;
+
+for (int index = 0; index < lenght; index++)
+{
+    Console.Write("Введите значение элемента массива под index " + index + " = ");
+    arrey[index] = int.Parse(Console.ReadLine());
+}
+Console.Write("Массив из заданных элементов -> ");
+for (int position = 0; position < lenght; position++)
+{
+    Console.Write(arrey[position] + ","); 
+} */
